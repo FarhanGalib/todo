@@ -16,12 +16,10 @@ export default function Modal({ handleModal, files, setFiles }) {
 	};
 
 	const removeFile = (index) => {
-		console.log('index=', index);
 		const copyFileNames = fileNames;
 		copyFileNames.splice(index, 1);
 		setFileNames([...copyFileNames]);
 	};
-	console.log(fileNames);
 
 	const handleFiles = (e) => {
 		if (e.target.files.length > 0) {
@@ -34,7 +32,6 @@ export default function Modal({ handleModal, files, setFiles }) {
 	};
 
 	const uploadFiles = () => {
-		alert();
 		setFiles(() => fileNames);
 		handleModal();
 	};
