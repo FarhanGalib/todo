@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+/* .app_container {
+	background: #ffffff;
+  width: 100vw;
+  background-color: red;
+} */
+.todo-container {
+	box-sizing: border-box;
+	display: flex;
+	max-width: 100vw;
+	width: 100%;
+	overflow: hidden;
+	overflow-x: auto;
+	padding: 20px;
+	gap: 20px;
+	background-color: rgb(255, 255, 255);
+	color: gray;
+}
+.todo {
+	box-sizing: border-box;
+	background: #f2f4f7;
+	height: 90vh;
+	padding: 10px;
+	padding-right: 0px;
+	min-width: 350px;
+	width: 100%;
+  border-radius: 3px;
+}
+.todo-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding-right: 10px;
+
+}
+.header-left {
+	display: flex;
+	gap: 3px;
+	align-items: center;
+}
+.header-logo {
+	width: 15px;
+	height: 20px;
+	border-radius: 55% 0% 0% 55%;
+}
+.todo-header-name {
+	font-weight: bold;
+}
+.todo-quantity {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #e8eef3;
+	height: 20px;
+	min-width: 15px;
+	padding: 5px;
+	font-weight: bold;
+}
+.todo-body {
+	height: 100%;
+	overflow-y: auto;
+	padding-right: 10px;
+}
+.todo-card {
+	background: #ffffff;
+	border-radius: 5px;
+	padding: 5px;
+	/* width: 100%; */
+	/* margin-top: 20px; */
+	margin-bottom: 20px;
+	
+	padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+.header-left {
+	display: flex;
+	align-items: center;
+	gap: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-right {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 3px;
+}
+.avatar {
+	/* height: 20px;
+	width: 20px; */
+}
+.avatar-image {
+	height: 30px;
+	width: 30px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.name {
+	font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main-left {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+.main-left .text {
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.main-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f2f0e9;
+	width: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quantity {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	background: #f2f4f7;
+	font-weight: bold;
 }
+
+.comments {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+}
+
+.files {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+}
+.files:hover{
+	cursor: pointer;
+}
+.date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+}
+.icon {
+	color: gray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+ /* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: inset 0 0 5px rgb(175, 175, 175);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #006AB2;
+  border-radius: 8px ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006AB2;
+} 
